@@ -35,7 +35,7 @@ class QuoteScreen extends Component {
 
 	render() {
 		return (
-			<Image source={bgImage} style={styles.backgroundContainer}>
+			<Image source={bgImage} style={styles.backgroundContainer} resizeMode="stretch">
 				<View style={styles.container}>
 					<Quote
 						key={this.props.qId}
@@ -59,7 +59,6 @@ QuoteScreen.propTypes = {
 const styles = StyleSheet.create({
 	backgroundContainer: {
 		flex: 1,
-		resizeMode: 'cover',
 		width: undefined,
 		height: undefined,
 	},
